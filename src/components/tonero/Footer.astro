@@ -1,0 +1,51 @@
+---
+const date = new Date().getFullYear();
+---
+
+<section
+  class="flex flex-col items-center justify-center pt-[2rem] text-white text-center font-sans"
+>
+  <div class="font-sans w-[351px] h-[466px] bg-[#3b3d4d] rounded-sm mt-5">
+    <h3 class="font-playFair mt-[2.5rem] text-4xl text-[#bd9f60]">
+      Get Started Now with Shade
+    </h3>
+    <article class="font-sans text-[#f2f2f2] mt-5 text-[1rem]">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+    </article>
+
+    <form class="font-sans">
+      <input
+        type="email"
+        placeholder="Enter your email"
+        class="w-[300px] h-[50px] mt-[2rem] border-[2px] border-gray-500 bg-black rounded-[5px] px-[1rem] text-[#f2f2f2] focus:outline-none focus:ring-2 focus:ring-[#bd9f60]"
+      />
+      <button
+        type="submit"
+        class="w-[300px] h-[50px] mt-[1rem] bg-black text-white rounded-[5px] font-bold border-[1px] border-gray-500 cursor-pointer"
+      >
+        Sign Up
+      </button>
+      <p class="text-sm">
+        By signing up, you agree to our <span
+          class="text-[#bd9f60] cursor-pointer mt-[2rem]"
+          >Terms and conditions</span
+        >
+      </p>
+    </form>
+  </div>
+
+  <footer class="w-[350px] mt-[3rem]">
+    <ul class="text-left text-base mt-[2rem] space-y-4 px-5">
+      <li class="font-semibold text-lg">Pages</li>
+      <li class="cursor-pointer">Home</li>
+      <li class="cursor-pointer">About</li>
+      <li class="cursor-pointer">Pricing</li>
+      <li class="cursor-pointer">Contact Us</li>
+    </ul>
+    <h3 class="text-center text-lg mt-[3rem]">
+      All Right Reserved Tonero @{date}
+    </h3>
+  </footer>
+</section>
