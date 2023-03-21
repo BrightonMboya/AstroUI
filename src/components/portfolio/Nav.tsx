@@ -32,7 +32,7 @@ const Nav = () => {
             onClick={() => setShowNav(!showNav)}
           >
             <li className="cursor-pointer">
-              <a href="/blogs">Home</a>
+              <a href="/#">Home</a>
             </li>
             <li className="cursor-pointer">
               <a href="#about">About Me</a>
@@ -42,26 +42,26 @@ const Nav = () => {
               <a href="#projects">Projects</a>
             </li>
             <li className="cursor-pointer">
-              <a href="#mawasiliano">Contact</a>
+              <a href="#contacts">Contact</a>
             </li>
           </ul>
         </section>
       )}
 
       {/* For wide Screens */}
-      <ul className="md:flex gap-5 hidden text-lg">
+      <ul className="md:flex gap-5 hidden text-lg md:pl-[3rem]">
         <li className="cursor-pointer">
-          <a href="/blogs">Home</a>
+          <a href="/#">Home</a>
         </li>
         <li className="cursor-pointer">
           <a href="#about">About Me</a>
         </li>
         <li className="cursor-pointer">
           {" "}
-          <a href="#aboutUs">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li className="cursor-pointer">
-          <a href="#mawasiliano">Contact</a>
+          <a href="#contacts">Contact</a>
         </li>
       </ul>
     </div>
