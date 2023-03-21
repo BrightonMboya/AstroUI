@@ -39,7 +39,7 @@ const Nav = () => {
             </li>
             <li className="cursor-pointer">
               {" "}
-              <a href="#aboutUs">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li className="cursor-pointer">
               <a href="#mawasiliano">Contact</a>
