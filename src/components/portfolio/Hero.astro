@@ -1,0 +1,37 @@
+---
+import Nav from "./Nav";
+---
+
+<section class="h-[100vh] w-full relative overflow-hidden">
+  <Nav client:idle />
+  <div class="space-y-5 flex flex-col pl-5 absolute pt-[30vh]">
+    <a class="cursor-pointer" href="#">
+      <img src="/images/ig.png" alt="arrow" loading="lazy" class="w-8 h-8" />
+    </a>
+    <a class="cursor-pointer" href="#">
+      <img
+        src="/images/twitter.png"
+        alt="arrow"
+        loading="lazy"
+        class="w-8 h-8"
+      />
+    </a>
+    <a class="cursor-pointer" href="#">
+      <img
+        src="/images/github.png"
+        alt="arrow"
+        loading="lazy"
+        class="w-8 h-8"
+      />
+    </a>
+  </div>
+  <img
+    src="/images/portfolio.png"
+    alt="portfolio"
+    class="object-cover h-[100vh] w-full object-center"
+  />
+  <div class="absolute bottom-5 left-5 text-white font-semibold">
+    <h3 class="text-[4rem]">Bruno</h3>
+    <h3 class="translate-y-[-39px] text-[5.6rem]">Bukayo</h3>
+  </div>
+</section>
