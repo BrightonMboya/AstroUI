@@ -6,171 +6,196 @@ const date = new Date().getFullYear();
 ---
 
 <Layout title="Welcome to Astro.">
-  <main class="bg-[#f7f4f2] font-sans pt-[2rem] pl-5 text-[#101010] w-full">
-    <nav>
-      <h3 class="font-montserrat tracking-wide text-4xl">AstroUI</h3>
-    </nav>
+  <main
+    class="bg-[#f7f4f2] font-sans pt-[2rem] sm:pt-[3rem] pl-5 sm:pl-[3rem] md:pl-0 text-[#101010] md:flex md:flex-col md:items-center md:justify-center"
+  >
+    <div>
+      <nav>
+        <h3 class="font-montserrat tracking-wide text-4xl">AstroUI</h3>
+      </nav>
 
-    <section class="mt-[3rem]">
-      <div class="w-[250px] h-[2px] bg-[#101010]"></div>
-      <h3 class="font-montserrat tracking-wide text-3xl mt-5">
-        AstroUI Landing Pages
-      </h3>
-      <p class="mt-1 text-xl font-light">
-        Presenting AstroUI, a list of landing pages that you can customize, and
-        deploy for free
-      </p>
-
-      <button
-        class="px-6 py-[10px] bg-[#101010] text-white font-medium mt-[2rem]"
-        >Explore Pages</button
-      >
-      <button class="px-6 py-2 border-2 border-[#101010]">Contribute</button>
-    </section>
-
-    <section class="mt-[3rem]">
-      <div class="w-[250px] h-[2px] bg-[#101010]"></div>
-      <h3 class="font-montserrat tracking-wide text-3xl mt-5">
-        What is included in AstroUI
-      </h3>
-      <p class="mt-1 text-xl font-light">
-        AstroUI includes over 12 pages in total, and more will be added as the
-        project grows.
-      </p>
-
-      <p class="mt-5 text-lg">
-        Take a look at the main pages included in AstroUI Template
-      </p>
-      <div class="text-center">
-        <h3 class="text-2xl font-montserrat font-medium mt-5">
-          Product Showcase
+      <section class="mt-[3rem]">
+        <div class="w-[250px] sm:w-[350px] h-[2px] bg-[#101010]"></div>
+        <h3 class="font-montserrat tracking-wide text-3xl sm:text-4xl mt-2">
+          AstroUI Landing Pages
         </h3>
-        <p>
-          An example of websites that can be used as prodct showcase by startups
-          and other products
-        </p>
-        <div class="md:grid md:grid-cols-2 xl:grid-cols-3">
-          <div class="flex flex-col items-center mt-5">
-            <div
-              class="bg-[#f7f7f7] w-[300px] h-[380px] border-2 border-[#101011]"
-            >
-              <img
-                src="/images/snapshot.png"
-                class="w-[300px] object-cover h-[340px]"
-                alt="landing page"
-                loading="lazy"
-              />
-              <h3 class="text-3xl text-center">Agencies</h3>
-            </div>
-          </div>
-
-          <div class="flex flex-col items-center mt-5">
-            <div
-              class="bg-[#f7f7f7] w-[300px] h-[380px] border-2 border-[#101011]"
-            >
-              <img
-                src="/images/snapshot.png"
-                class="w-[300px] object-cover h-[340px]"
-                alt="landing page"
-                loading="lazy"
-              />
-              <h3 class="text-3xl text-center">Portfolios</h3>
-            </div>
-          </div>
-          <div class="flex flex-col items-center mt-5">
-            <div
-              class="bg-[#f7f7f7] w-[300px] h-[380px] border-2 border-[#101011]"
-            >
-              <img
-                src="/images/snapshot.png"
-                class="w-[300px] object-cover h-[340px]"
-                alt="landing page"
-                loading="lazy"
-              />
-              <h3 class="text-3xl text-center">Product Demos</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center mt-[2rem]">
-        <h3 class="text-2xl font-montserrat font-medium mt-5">Portfolios</h3>
-        <p>
-          Get your portfolio up and running using any of the templates in
-          AstroUI
-        </p>
-        <div class="md:grid md:grid-cols-2 xl:grid-cols-3">
-          <div class="flex flex-col items-center mt-5">
-            <div
-              class="bg-[#f7f7f7] w-[300px] h-[380px] border-2 border-[#101011]"
-            >
-              <img
-                src="/images/snapshot.png"
-                class="w-[300px] object-cover h-[340px]"
-                alt="landing page"
-                loading="lazy"
-              />
-              <h3 class="text-3xl text-center">Agencies</h3>
-            </div>
-          </div>
-
-          <div class="flex flex-col items-center mt-5">
-            <div
-              class="bg-[#f7f7f7] w-[300px] h-[380px] border-2 border-[#101011]"
-            >
-              <img
-                src="/images/snapshot.png"
-                class="w-[300px] object-cover h-[340px]"
-                alt="landing page"
-                loading="lazy"
-              />
-              <h3 class="text-3xl text-center">Portfolios</h3>
-            </div>
-          </div>
-          <div class="flex flex-col items-center mt-5">
-            <div
-              class="bg-[#f7f7f7] w-[300px] h-[380px] border-2 border-[#101011]"
-            >
-              <img
-                src="/images/snapshot.png"
-                class="w-[300px] object-cover h-[340px]"
-                alt="landing page"
-                loading="lazy"
-              />
-              <h3 class="text-3xl text-center">Product Demos</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col items-center mt-5">
-        <button
-          class="px-6 py-[10px] bg-[#101010] text-white font-medium mt-[2rem]"
-          >Contribute</button
-        >
-      </div>
-
-      <div class="bg-white h-[360px] w-[362px] mt-[2rem] pt-[2rem] pl-5">
-        <h3 class="font-montserrat tracking-wide text-3xl mt-5">
-          Contributing Figma files.
-        </h3>
-        <p class="text-[#101010] mt-5">
-          You can submit a figma file link that you want to be included in
-          AstroUI. Send me an email at b.mboya@alustudent.com and I will send
-          you the editable figma file for AstroUI
+        <p class="mt-1 sm:mt-3 text-xl font-light">
+          Presenting AstroUI, a list of landing pages that you can customize,
+          and deploy for free
         </p>
 
         <button
-          class="font-montserrat tracking-wide text-2xl mt-5 bg-[#101010] text-white px-6 py-[20px]"
-          >Contribute Figma File</button
+          class="px-6 py-[10px] bg-[#101010] text-white font-medium mt-[2rem]"
         >
-      </div>
-    </section>
+          <a href="#explore">Explore Pages</a>
+        </button>
+        <button class="px-6 py-2 border-2 border-[#101010]">
+          <a href="https://github.com/BrightonMboya/AstroUI"> Contribute</a>
+        </button>
+      </section>
 
-    <foooter>
-      <p class="pt-[4rem] text-center text-lg">
-        All Rights Reserved, {date} Astro UI
-      </p>
-    </foooter>
+      <section class="mt-[3rem] md:mt-[5rem]">
+        <div class="w-[250px] sm:w-[350px] h-[2px] bg-[#101010]"></div>
+        <h3 class="font-montserrat tracking-wide text-3xl sm:text-4xl mt-2">
+          What is included in AstroUI
+        </h3>
+        <p class="mt-1 text-xl sm:mt-2 font-light">
+          AstroUI includes over 12 pages in total, and more will be added as the
+          project grows.
+        </p>
+
+        <p class="mt-5 text-xl">
+          Take a look at the main pages included in AstroUI Template
+        </p>
+        <div class="text-center" id="explore">
+          <h3
+            class="text-2xl font-montserrat font-medium mt-5 sm:mt-[2rem] md:mt-[4rem]"
+          >
+            Product Showcase
+          </h3>
+          <p class="sm:text-lg">
+            An example of websites that can be used as prodct showcase by
+            startups and other products
+          </p>
+          <div class="sm:grid sm:grid-cols-2 md:max-w-3xl">
+            <div class="flex flex-col items-center mt-5">
+              <div
+                class="bg-[#f7f7f7] w-[300px] h-[380px] border-2 border-[#101011]"
+              >
+                <img
+                  src="/images/snapshot.png"
+                  class="w-[300px] object-cover h-[340px]"
+                  alt="landing page"
+                  loading="lazy"
+                />
+                <h3 class="text-3xl text-center">Agencies</h3>
+              </div>
+            </div>
+            <div class="flex flex-col items-center mt-5">
+              <div
+                class="bg-[#f7f7f7] w-[300px] h-[380px] border-2 border-[#101011]"
+              >
+                <img
+                  src="/images/snapshot.png"
+                  class="w-[300px] object-cover h-[340px]"
+                  alt="landing page"
+                  loading="lazy"
+                />
+                <h3 class="text-3xl text-center">Agencies</h3>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center mt-5">
+              <div
+                class="bg-[#f7f7f7] w-[300px] h-[380px] border-2 border-[#101011]"
+              >
+                <img
+                  src="/images/snapshot.png"
+                  class="w-[300px] object-cover h-[340px]"
+                  alt="landing page"
+                  loading="lazy"
+                />
+                <h3 class="text-3xl text-center">Portfolios</h3>
+              </div>
+            </div>
+            <div class="flex flex-col items-center mt-5">
+              <div
+                class="bg-[#f7f7f7] w-[300px] h-[380px] border-2 border-[#101011]"
+              >
+                <img
+                  src="/images/snapshot.png"
+                  class="w-[300px] object-cover h-[340px]"
+                  alt="landing page"
+                  loading="lazy"
+                />
+                <h3 class="text-3xl text-center">Product Demos</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-[2rem]">
+          <h3 class="text-2xl font-montserrat font-medium mt-5 md:mt-[4rem]">
+            Portfolios
+          </h3>
+          <p>
+            Get your portfolio up and running using any of the templates in
+            AstroUI
+          </p>
+          <div class="sm:grid sm:grid-cols-2 md:max-w-3xl">
+            <div class="flex flex-col items-center mt-5">
+              <div
+                class="bg-[#f7f7f7] w-[300px] h-[380px] border-2 border-[#101011]"
+              >
+                <img
+                  src="/images/snapshot.png"
+                  class="w-[300px] object-cover h-[340px]"
+                  alt="landing page"
+                  loading="lazy"
+                />
+                <h3 class="text-3xl text-center">Agencies</h3>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center mt-5">
+              <div
+                class="bg-[#f7f7f7] w-[300px] h-[380px] border-2 border-[#101011]"
+              >
+                <img
+                  src="/images/snapshot.png"
+                  class="w-[300px] object-cover h-[340px]"
+                  alt="landing page"
+                  loading="lazy"
+                />
+                <h3 class="text-3xl text-center">Portfolios</h3>
+              </div>
+            </div>
+            <div class="flex flex-col items-center mt-5">
+              <div
+                class="bg-[#f7f7f7] w-[300px] h-[380px] border-2 border-[#101011]"
+              >
+                <img
+                  src="/images/snapshot.png"
+                  class="w-[300px] object-cover h-[340px]"
+                  alt="landing page"
+                  loading="lazy"
+                />
+                <h3 class="text-3xl text-center">Product Demos</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center mt-5">
+          <button
+            class="px-6 py-[10px] bg-[#101010] text-white font-medium mt-[2rem]"
+            >Contribute</button
+          >
+        </div>
+        <div class="md:flex md:items-center md:justify-center">
+          <div class="bg-white h-[360px] w-[362px] mt-[2rem] pt-[2rem] pl-5">
+            <h3 class="font-montserrat tracking-wide text-3xl mt-5">
+              Contributing Figma files.
+            </h3>
+            <p class="text-[#101010] mt-5">
+              You can submit a figma file link that you want to be included in
+              AstroUI. Send me an email at b.mboya@alustudent.com and I will
+              send you the editable figma file for AstroUI
+            </p>
+
+            <button
+              class="font-montserrat tracking-wide text-2xl mt-5 bg-[#101010] text-white px-6 py-[20px]"
+              >Contribute Figma File</button
+            >
+          </div>
+        </div>
+      </section>
+
+      <foooter>
+        <p class="pt-[4rem] text-center text-lg">
+          All Rights Reserved, {date} Astro UI
+        </p>
+      </foooter>
+    </div>
   </main>
 </Layout>
