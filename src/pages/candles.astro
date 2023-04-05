@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "@fontsource/dm-sans";
+const date = new Date().getFullYear();
 ---
 
 <Layout title="Candles">
@@ -49,25 +50,35 @@ import "@fontsource/dm-sans";
       src="https://images.unsplash.com/photo-1602409339188-95d178a611a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bG90aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
       loading="lazy"
       alt="candles"
+      class="mt-5"
     />
 
-    <h3>From Nature for your skin</h3>
-    <p>
+    <h3 class="uppercase mt-[2rem] font-medium text-[1.3rem] tracking-loose">
+      From Nature for your skin
+    </h3>
+    <p class="mt-3 tracking-wide">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eaque
       tempore exercitationem ea molestias obcaecati ipsa repellendus illo enim
       nobis! Molestiae deleniti laudantium eligendi, unde inventore
       necessitatibus vero nobis placeat.
     </p>
-    <button>Our Story</button>
+    <button
+      class="px-4 py-2 border-[1px] border-[#101010] mt-5 cursor-pointer rounded-sm"
+      >Our Story</button
+    >
   </section>
-  <footer>
-    <h3>Shop</h3>
+  <footer class="flex items-center justify-center flex-col mt-[2.5rem]">
+    <h3 class="font-medium text-[1.25rem] uppercase">Shop</h3>
     <p>Sale</p>
     <p>Contact Us</p>
 
-    <h3>help</h3>
+    <h3 class="font-medium text-[1.25rem] uppercase mt-5">help</h3>
     <p>FAQ</p>
     <p>Shipping</p>
     <p>Return Policy</p>
+
+    <p class="pt-[4rem] text-center text-lg">
+      All Rights Reserved, {date} Astro UI
+    </p>
   </footer>
 </Layout>
