@@ -5,7 +5,7 @@ const Nav = () => {
   const [showNav, setShowNav] = React.useState(false);
 
   return (
-    <div className="text-white  pr-5 z-[100] pt-[3rem]">
+    <div className="text-white   pt-[3rem] pr-5 z-[100]">
       <div
         className="absolute z-[9999] right-5 cursor-pointer md:hidden"
         onClick={() => {
@@ -49,7 +49,7 @@ const Nav = () => {
       )}
 
       {/* For wide Screens */}
-      <ul className="md:flex gap-5 hidden text-lg md:pl-[3rem]">
+      <ul className="md:flex gap-5 hidden text-lg md:pl-[3rem] xl:pt-[5rem]">
         <li className="cursor-pointer">
           <a href="/#">Home</a>
         </li>
